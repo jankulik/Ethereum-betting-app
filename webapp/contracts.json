@@ -1,0 +1,2893 @@
+{
+    "BetNumber": {
+        "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "storageContractAddress",
+                        "type": "address"
+                    }
+                ],
+                "stateMutability": "nonpayable",
+                "type": "constructor"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "int256",
+                        "name": "guess",
+                        "type": "int256"
+                    }
+                ],
+                "name": "bet",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "bettor",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "evaluated",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "guess",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "nonce",
+                                "type": "int256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Guess",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "hash",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "bytes",
+                        "name": "encryptedData",
+                        "type": "bytes"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "course",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "bettingDeadline",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "answerRevealDeadline",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "whitelist",
+                        "type": "address[]"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "blacklist",
+                        "type": "address[]"
+                    },
+                    {
+                        "internalType": "int256[]",
+                        "name": "restrictedOptions",
+                        "type": "int256[]"
+                    }
+                ],
+                "name": "createBet",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "hash",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "course",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "bettingDeadline",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "answerRevealDeadline",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "whitelist",
+                        "type": "address[]"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "blacklist",
+                        "type": "address[]"
+                    },
+                    {
+                        "internalType": "int256[]",
+                        "name": "restrictedOptions",
+                        "type": "int256[]"
+                    }
+                ],
+                "name": "createBet",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "forceFinishBet",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getBet",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getEncryptedData",
+                "outputs": [
+                    {
+                        "internalType": "bytes",
+                        "name": "",
+                        "type": "bytes"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "guessId",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "getGuess",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "bettor",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "evaluated",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "guess",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "nonce",
+                                "type": "int256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Guess",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getGuesses",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "bettor",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "evaluated",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "guess",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "nonce",
+                                "type": "int256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Guess[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getOptions",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "int256",
+                                "name": "value",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBet",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Option[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getSecretBet",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "guessStorageId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getSecretEncryptedData",
+                "outputs": [
+                    {
+                        "internalType": "bytes",
+                        "name": "",
+                        "type": "bytes"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserBets",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserBetsNormal",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "guesser",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserGuesses",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "guessId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "betId",
+                                "type": "string"
+                            }
+                        ],
+                        "internalType": "struct BetBase.UserGuess[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserSecretBets",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "money",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "course",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "multMoney",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "pure",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "int256",
+                        "name": "revealedNumber",
+                        "type": "int256"
+                    },
+                    {
+                        "internalType": "int256",
+                        "name": "nonce",
+                        "type": "int256"
+                    }
+                ],
+                "name": "revealNumber",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "topUp",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "userBets",
+                "outputs": [
+                    {
+                        "internalType": "string",
+                        "name": "",
+                        "type": "string"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "userGuesses",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "guessId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "int256",
+                        "name": "answer",
+                        "type": "int256"
+                    },
+                    {
+                        "internalType": "int256",
+                        "name": "nonce",
+                        "type": "int256"
+                    }
+                ],
+                "name": "valueToBinary",
+                "outputs": [
+                    {
+                        "internalType": "bytes",
+                        "name": "",
+                        "type": "bytes"
+                    }
+                ],
+                "stateMutability": "pure",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "guesser",
+                        "type": "address"
+                    }
+                ],
+                "name": "whitelistAddress",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            }
+        ]
+    },
+    "BetMarket": {
+        "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "orderId",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "cancelOrder",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "arbitrator",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "string[]",
+                        "name": "options",
+                        "type": "string[]"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "bettingDeadline",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "answerRevealDeadline",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "createBet",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "optionId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "amountOTM",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "createBuyOrder",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "optionId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "amountOTM",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "amountWei",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "createSellOrder",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "ensureParticipates",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "orderId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "amountOTM",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "fillBuyOrder",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "orderId",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "fillSellOrder",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "forceFinishBet",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getBet",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "arbitrator",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "string[]",
+                                "name": "options",
+                                "type": "string[]"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "address payable",
+                                        "name": "user",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "uint256[]",
+                                        "name": "tokens",
+                                        "type": "uint256[]"
+                                    }
+                                ],
+                                "internalType": "struct BetMarket.Balance[]",
+                                "name": "balances",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "address payable",
+                                        "name": "creator",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "address",
+                                        "name": "filler",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "optionId",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "amountOTM",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "amountWei",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "enum BetMarket.OrderStatus",
+                                        "name": "status",
+                                        "type": "uint8"
+                                    },
+                                    {
+                                        "internalType": "enum BetMarket.OrderType",
+                                        "name": "orderType",
+                                        "type": "uint8"
+                                    }
+                                ],
+                                "internalType": "struct BetMarket.Order[]",
+                                "name": "orders",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "enum BetMarket.BetStatus",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "winningOptionId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct BetMarket.Bet",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                    }
+                ],
+                "name": "getBetsParticipated",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "arbitrator",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "string[]",
+                                "name": "options",
+                                "type": "string[]"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "address payable",
+                                        "name": "user",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "uint256[]",
+                                        "name": "tokens",
+                                        "type": "uint256[]"
+                                    }
+                                ],
+                                "internalType": "struct BetMarket.Balance[]",
+                                "name": "balances",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "address payable",
+                                        "name": "creator",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "address",
+                                        "name": "filler",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "optionId",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "amountOTM",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "amountWei",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "enum BetMarket.OrderStatus",
+                                        "name": "status",
+                                        "type": "uint8"
+                                    },
+                                    {
+                                        "internalType": "enum BetMarket.OrderType",
+                                        "name": "orderType",
+                                        "type": "uint8"
+                                    }
+                                ],
+                                "internalType": "struct BetMarket.Order[]",
+                                "name": "orders",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "enum BetMarket.BetStatus",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "winningOptionId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct BetMarket.Bet[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getOrders",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "address payable",
+                                "name": "creator",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "filler",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "optionId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amountOTM",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amountWei",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetMarket.OrderStatus",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "internalType": "enum BetMarket.OrderType",
+                                "name": "orderType",
+                                "type": "uint8"
+                            }
+                        ],
+                        "internalType": "struct BetMarket.Order[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "user",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserBalance",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "address payable",
+                                "name": "user",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256[]",
+                                "name": "tokens",
+                                "type": "uint256[]"
+                            }
+                        ],
+                        "internalType": "struct BetMarket.Balance",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserBets",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "arbitrator",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "string[]",
+                                "name": "options",
+                                "type": "string[]"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "address payable",
+                                        "name": "user",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "uint256[]",
+                                        "name": "tokens",
+                                        "type": "uint256[]"
+                                    }
+                                ],
+                                "internalType": "struct BetMarket.Balance[]",
+                                "name": "balances",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "address payable",
+                                        "name": "creator",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "address",
+                                        "name": "filler",
+                                        "type": "address"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "optionId",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "amountOTM",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "amountWei",
+                                        "type": "uint256"
+                                    },
+                                    {
+                                        "internalType": "enum BetMarket.OrderStatus",
+                                        "name": "status",
+                                        "type": "uint8"
+                                    },
+                                    {
+                                        "internalType": "enum BetMarket.OrderType",
+                                        "name": "orderType",
+                                        "type": "uint8"
+                                    }
+                                ],
+                                "internalType": "struct BetMarket.Order[]",
+                                "name": "orders",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "enum BetMarket.BetStatus",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "winningOptionId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct BetMarket.Bet[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "winningOptionId",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "resolveBet",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            }
+        ]
+    },
+    "BetNumberSecretAnswer": {
+        "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+        "abi": [
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "storageContractAddress",
+                        "type": "address"
+                    }
+                ],
+                "stateMutability": "nonpayable",
+                "type": "constructor"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "guessHash",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "bet",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "bettor",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "evaluated",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "guess",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "nonce",
+                                "type": "int256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Guess",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "course",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "bettingDeadline",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "answerRevealDeadline",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "prizeClaimDeadline",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "whitelist",
+                        "type": "address[]"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "blacklist",
+                        "type": "address[]"
+                    },
+                    {
+                        "internalType": "int256[]",
+                        "name": "restrictedOptions",
+                        "type": "int256[]"
+                    }
+                ],
+                "name": "createBet",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "guessHash",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "bytes",
+                        "name": "encryptedGuess",
+                        "type": "bytes"
+                    }
+                ],
+                "name": "encryptedBet",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "bettor",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "evaluated",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "guess",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "nonce",
+                                "type": "int256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Guess",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "forceFinishBet",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getBet",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getEncryptedData",
+                "outputs": [
+                    {
+                        "internalType": "bytes",
+                        "name": "",
+                        "type": "bytes"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "guessId",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "getGuess",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "bettor",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "evaluated",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "guess",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "nonce",
+                                "type": "int256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Guess",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getGuesses",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "bettor",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "evaluated",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "guess",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "nonce",
+                                "type": "int256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Guess[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getOptions",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "int256",
+                                "name": "value",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBet",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct BetBase.Option[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getSecretBet",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet",
+                        "name": "",
+                        "type": "tuple"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "guessStorageId",
+                        "type": "string"
+                    }
+                ],
+                "name": "getSecretEncryptedData",
+                "outputs": [
+                    {
+                        "internalType": "bytes",
+                        "name": "",
+                        "type": "bytes"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserBets",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserBetsNormal",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "guesser",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserGuesses",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "guessId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "betId",
+                                "type": "string"
+                            }
+                        ],
+                        "internalType": "struct BetBase.UserGuess[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    }
+                ],
+                "name": "getUserSecretBets",
+                "outputs": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "string",
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "int256",
+                                "name": "answer",
+                                "type": "int256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalBets",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "betLimit",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "course",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "bettingDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "answerRevealDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "prizeClaimDeadline",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "enum BetBase.Status",
+                                "name": "status",
+                                "type": "uint8"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "internalType": "int256",
+                                        "name": "value",
+                                        "type": "int256"
+                                    },
+                                    {
+                                        "internalType": "uint256",
+                                        "name": "totalBet",
+                                        "type": "uint256"
+                                    }
+                                ],
+                                "internalType": "struct BetBase.Option[]",
+                                "name": "options",
+                                "type": "tuple[]"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "hasRestrictedOptions",
+                                "type": "bool"
+                            }
+                        ],
+                        "internalType": "struct BetBase.ReturnedBet[]",
+                        "name": "",
+                        "type": "tuple[]"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "money",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "course",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "multMoney",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "pure",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "guessId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "int256",
+                        "name": "guessedNumber",
+                        "type": "int256"
+                    },
+                    {
+                        "internalType": "int256",
+                        "name": "nonce",
+                        "type": "int256"
+                    }
+                ],
+                "name": "revealGuess",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "int256",
+                        "name": "revealedNumber",
+                        "type": "int256"
+                    }
+                ],
+                "name": "revealNumber",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "name": "topUp",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "userBets",
+                "outputs": [
+                    {
+                        "internalType": "string",
+                        "name": "",
+                        "type": "string"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "userGuesses",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "guessId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "int256",
+                        "name": "answer",
+                        "type": "int256"
+                    },
+                    {
+                        "internalType": "int256",
+                        "name": "nonce",
+                        "type": "int256"
+                    }
+                ],
+                "name": "valueToBinary",
+                "outputs": [
+                    {
+                        "internalType": "bytes",
+                        "name": "",
+                        "type": "bytes"
+                    }
+                ],
+                "stateMutability": "pure",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {
+                        "internalType": "string",
+                        "name": "betId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "guesser",
+                        "type": "address"
+                    }
+                ],
+                "name": "whitelistAddress",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            }
+        ]
+    }
+}
