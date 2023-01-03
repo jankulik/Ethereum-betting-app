@@ -1,5 +1,7 @@
 # CE4153-blockchain-project
 
+[Here](https://youtu.be/yT02dSw4lwU) is a video with a demo of this app.
+
 This project demonstrates a decentralised application that allows its users to place different types of bets.
 
 ## Prerequisites

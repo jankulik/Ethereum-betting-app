@@ -618,6 +618,624 @@
       "artifacts": [
         "BetNumberNoForceFinish"
       ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/BetBase.sol": {
+      "lastModificationDate": 1672772009646,
+      "contentHash": "239dc560f6bf3ad4e800cda13189e110",
+      "sourceName": "chain/contracts/BetBase.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "./StorageByHash.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "BetBase"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/StorageByHash.sol": {
+      "lastModificationDate": 1672772009659,
+      "contentHash": "3102be000874ecb1ace9e1557e970109",
+      "sourceName": "chain/contracts/StorageByHash.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "StorageByHash"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1672772014941,
+      "contentHash": "cf46906c4035f51639a22265066a9e78",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1672772014926,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/BetNumberSecretAnswer.sol": {
+      "lastModificationDate": 1672772009658,
+      "contentHash": "d7d6b5d04e108124af7065e9c191a1ac",
+      "sourceName": "chain/contracts/BetNumberSecretAnswer.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "./StorageByHash.sol",
+        "./BetBase.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "BetNumberSecretAnswer"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/red_black_tree/StorageByHash.sol": {
+      "lastModificationDate": 1672772009660,
+      "contentHash": "49df738d6bfa5c7d41d262d663624470",
+      "sourceName": "chain/contracts/red_black_tree/StorageByHash.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "StorageByHash"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/red_black_tree/BetNumber.sol": {
+      "lastModificationDate": 1672772009660,
+      "contentHash": "8f171ea9386651865228a77431ceeaf4",
+      "sourceName": "chain/contracts/red_black_tree/BetNumber.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./StorageByHash.sol",
+        "./BetBase.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "BetNumber"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/red_black_tree/BetBase.sol": {
+      "lastModificationDate": 1672772009660,
+      "contentHash": "a3578000f37ac880e46accf0998a7e91",
+      "sourceName": "chain/contracts/red_black_tree/BetBase.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./StorageByHash.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "./HitchensOrderStatisticsTreeLib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "BetBase"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/red_black_tree/HitchensOrderStatisticsTreeLib.sol": {
+      "lastModificationDate": 1672772009660,
+      "contentHash": "a04843d35607b865174a1ed98e2c9cce",
+      "sourceName": "chain/contracts/red_black_tree/HitchensOrderStatisticsTreeLib.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "HitchensOrderStatisticsTreeLib"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1672772014937,
+      "contentHash": "2337f0279507b5edf14a07067adf0d05",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/Palantir.sol": {
+      "lastModificationDate": 1672772009659,
+      "contentHash": "459c7fcf05b22b4bfe70f5c6ccd2b1ff",
+      "sourceName": "chain/contracts/Palantir.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "./StorageByHash.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "Palantir"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/BetNumberNoForceFinish.sol": {
+      "lastModificationDate": 1672772009659,
+      "contentHash": "3d17f413fdfd6de0b8c417b05f32f0e0",
+      "sourceName": "chain/contracts/BetNumberNoForceFinish.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "./StorageByHash.sol",
+        "./BetBase.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "BetNumberNoForceFinish"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/BetNumber.sol": {
+      "lastModificationDate": 1672772009658,
+      "contentHash": "2a9997a279d54837347be30b1ee25c6f",
+      "sourceName": "chain/contracts/BetNumber.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "./StorageByHash.sol",
+        "./BetBase.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9"
+      ],
+      "artifacts": [
+        "BetNumber"
+      ]
+    },
+    "/Users/jankulik/Desktop/Programming/Ethereum-betting-app/chain/contracts/BetMarket.sol": {
+      "lastModificationDate": 1672772009659,
+      "contentHash": "47086c0ddddbe93f505b25b7ee24d649",
+      "sourceName": "chain/contracts/BetMarket.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BetMarket"
+      ]
     }
   }
 }
